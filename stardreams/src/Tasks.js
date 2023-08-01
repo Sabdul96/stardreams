@@ -12,6 +12,17 @@ const Tasks = () => {
         }
     };
 
+    const handleDeleteTasks = (index) => { 
+        const newTasks = [...tasks];
+        newTasks.splice(index, 1);
+        setTasks(newTasks);
+    };
+
+    const handleToggleTasks = (index) => { 
+        const newTasks =[...tasks];
+        newTasks[index].checked = !newTasks[index].checked;
+        setNewTasks(newTasks);
+    };
 
 return ( 
     <div> 
