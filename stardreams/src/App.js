@@ -1,14 +1,13 @@
 
 import './App.css';
+import Tasks from "./Tasks";
 
-function App() {
+const App =() => {
   return (
-    <div className="App">
-      <header className="App-header">
-          STARDREAMS: PLAN YOUR TRAVEL HERE
-      </header>
+    <div>
+      <Tasks/>
     </div>
   );
 }
 
-export default App;
+export default Tasks;

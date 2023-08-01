@@ -11,4 +11,19 @@ const Tasks = () => {
             setNewTasks(" ");
         }
     };
-}
+
+
+return ( 
+    <div> 
+        <h1> 
+        New Tasks
+        </h1>
+        <input 
+        type= "text" 
+        value={newTasks}
+        onChange={(e) => setNewTasks(e.target.value)}/>
+    </div>
+)
+
+};
+export default Tasks;
