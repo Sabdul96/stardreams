@@ -32,7 +32,9 @@ return (
         <input 
         type= "text" 
         value={newTasks}
-        onChange={(e) => setNewTasks(e.target.value)}/>
+        onChange={(e) => setNewTasks(e.target.value)}/> 
+
+        <button onClick={handleAddTasks}> New Tasks</button>
     </div>
 )
 
